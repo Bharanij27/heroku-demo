@@ -13,6 +13,7 @@ app.get('/', function(req, res){
         if(err) throw err;
         console.log("Created and data added sucessfully");
     })
+    fs.close();
 })
 
 app.listen(process.env.PORT || 3030, function () {
